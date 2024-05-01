@@ -1,5 +1,5 @@
 body {
-  bgcolor: gray;
+  background: #333;
 }
 
 #background {
@@ -106,7 +106,9 @@ video {
 
 #background{
 	width:1890;
-
+	}
+#background-image{
+	width:1910;
 }
  /*footer*/
 	table{
