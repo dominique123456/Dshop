@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<link rel="icon" type="image/x-icon" href="images/Bueno_cute.png">
+<link rel="stylesheet" href="login.css">
+
+<script>
+    function validateLogin() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      // Add your authentication logic here
+      if (username === "dominique"&& password === "123") {
+        window.location.href = "website.html";
+      } else {
+        alert("Invalid username or password. Please try again.");
+      }
+    }
+
+    function resetForm(){
+      document.getElementById("loginForm").reset();
+    }
+</script>
+</head>
+<body>
+<form id="loginForm" onsubmit="event.preventDefault(); validateLogin()">
+  <img src="Images/Bueno_cute.png" alt="Logo" id="Logo">
+<label for="username">Username:</label>
+<input type="text" id="username" name="username" required><br>
+
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" required><br>
+
+<input type="submit" value="Login">
+<input type="button" value="Reset"
+onclick="resetForm()">
+</form>
+</body>
+</html>
